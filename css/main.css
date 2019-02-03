@@ -1,7 +1,479 @@
 @charset "utf-8";
 /*CSS document*/
 
+#siteContainer {
+	width: 960px; 
+	margin:0 auto;
+}
+
 .hidden
 {
 	display: none;
+}
+
+#mainHeaderInformation {
+	height:380px;
+	background: url(../images/background_photo.jpg) no-repeat;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+}
+
+#headerText p.topText {
+	width: 364.46px;
+	font-family: "Oswald", sans-serif;
+	font-size: 26px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-left: 34px;
+	margin-top: 50px;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+#headerText p.yearWork {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-left: 34px;
+	margin-top: 26px;
+	opacity: 0.1;
+}
+#logo {
+	width: 170px;
+	height: 154px;
+	margin-top: 9px;
+}
+#socialMedia {
+	margin-top: 49px;
+	margin-left: auto;
+	margin-right: 21px;
+}
+
+#iconNav img {
+width: 45px;
+height: 45px;
+
+}
+
+#iconNav li {
+	display: inline-block;
+	margin-right: 16px;
+}
+
+#mainNav {
+	background: url(../images/background_main_nav.jpg);
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#mainNav ul {
+	margin: auto; 
+}
+
+#mainNav li {
+	display: inline-block;
+	color: #ffffff;
+	font-family: "Oswald", sans-serif;
+	font-size:18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: lighter;
+}
+
+#mainNav a {
+color: #ffffff;
+text-decoration: none;
+margin:0 15px;
+
+}
+#mainInformation {
+	height:600px; 
+	background-color: #1e393c;
+}
+
+#blockOne {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 50px;
+
+}
+#MenRiver {
+	position: relative;
+}
+#MenRiverText {
+	position: absolute;
+	width: 235.18px;
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    top: 151px;
+	left: 15px;
+
+}
+
+#carrierImage {
+	margin-left: 20px;
+
+}
+
+#Carrier {
+	position: relative;
+}
+#CarrierText {
+	position: absolute;
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    top: 193px;
+	left: 35px;
+
+}
+
+
+#blockTwo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 20px;
+
+}
+#Rainbow {
+	position: relative;
+}
+#RainbowText {
+	position: absolute;
+	width: 235.18px;
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    top: 107px;
+	left: 15px;
+
+}
+
+#volunteersImage {
+	margin-left: 20px;
+
+}
+
+#happyFishermanImage {
+	margin-left: 20px;
+
+}
+
+#Volunteer {
+	position: relative;
+}
+#VolunteerText {
+	position: absolute;
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    top: 22px;
+	left: 27px;
+
+}
+
+#happyFisherman {
+	position: relative;
+}
+#happyFishermanText {
+	width: 235.18px;
+	position: absolute;
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    top: 149px;
+	left: 35px;
+
+}
+
+#mainFooter {
+	background: url(../images/backgrond_footer.jpg);
+	height: 170px;
+}
+
+#mainFooter h2 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: lighter;
+	opacity: 0.7;
+	padding-top: 20px;
+	text-align: center;
+	
+
+}
+
+#localBusinesses {
+	margin-top: 20px;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#iconbusinesses li {
+	display: inline-block;
+	margin: auto 10px;
+}
+
+
+#tryRecycling img {
+	padding-bottom: 30px;
+}
+
+#muma img {
+	padding-bottom: 30px;
+}
+
+#Guillevin img {
+	padding-bottom: 30px;
+}
+
+#Melchers img {
+	padding-bottom: 30px;
+}
+
+/*ABOUT US*/
+
+#mainAbout {
+	height:816px; 
+	background-color: #1e393c;
+}
+
+#mainAbout h2.about {
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    padding-top: 61px;
+	text-align: center;
+}
+
+#mainAbout hr {
+	border:none;
+	margin: 40px auto;
+	width: 488px;
+	background-color:#ffffff;
+	height: 3px;
+}
+
+#textAbout {
+	width: 760px; 
+	margin: 0 auto;
+}
+
+.aboutText {
+	width: 760px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: lighter;
+	text-align: left;
+	line-height: 20px;
+	padding-left: 10px;
+	letter-spacing: 0.34px;
+}
+
+.aboutText p {
+	margin-bottom: 25px;
+}
+
+#blockAbout {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 5px;
+}
+
+#fishBreeding {
+	position: relative;
+}
+#fishBreedingText {
+	position: absolute;
+	width: 235.18px;
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    top: 192px;
+	left: 4px;
+
+}
+
+#EnvironmentImage {
+	margin-left: 20px;
+
+}
+
+#Environment {
+	position: relative;
+}
+#EnvironmentText {
+	position: absolute;
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    top: 192px;
+	left: 35px;
+
+}
+
+#CommunityImage {
+	margin-left: 20px;
+
+}
+
+#Community {
+	position: relative;
+}
+#CommunityText {
+	position: absolute;
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    top: 192px;
+	left: 50px;
+
+
+}
+
+ /* MEMBERSHIP*/
+
+ #mainMembership {
+	height:615px; 
+	background-color: #1e393c;
+}
+
+#blockOneMembership {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-top: 50px;
+	padding-left: 100px;
+
+}
+
+#MembershipOneText {
+	width: 240px;
+	margin-left: 20px;
+
+}
+
+#MembershipOneText h2 {
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+#MembershipOneText p {
+	font-family: "Oswald", sans-serif;
+	font-size:70px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+#MembershipOneText span {
+	font-family: "Oswald", sans-serif;
+	font-size:50px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+#blockTwoMembership {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-top: 20px;
+	padding-left: 100px;
+}
+
+#blockTwoMembershipText {
+	padding-top: 15px;
+	width: 500px;
+}
+
+#blockTwoMembershipText hr {
+	border:none;
+    width: 500px;
+	background-color:#ffffff;
+	height: 3px;
+}
+
+#blockTwoMembershipText article {
+	padding-top: 25px;
+}
+
+#blockTwoMembershipText p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: lighter;
+	text-align: left;
+	line-height: 20px;
+	letter-spacing: 0.34px;
+}
+
+#blockTwoMembershipText p.textPartTwo {
+	padding-top:15px;
+}
+
+#buttonMembership {
+	margin-left: 20px;
+	width: 170px;
+	height: 50px;
+	background-color: #767b75;
+}
+
+#buttonMembership h2 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+	line-height: 20px;
+	letter-spacing: 0.34px;
+	text-align: center;
+	margin-top: 15px;
 }
