@@ -1,6 +1,11 @@
 @charset "utf-8";
 /*CSS document*/
 
+body {
+	background-color: #001920;
+
+}
+
 #siteContainer {
 	width: 960px; 
 	margin:0 auto;
@@ -39,7 +44,7 @@
 	color: #ffffff;
 	margin-left: 34px;
 	margin-top: 26px;
-	opacity: 0.1;
+	opacity: 0.6;
 }
 #logo {
 	width: 170px;
@@ -476,4 +481,281 @@ margin:0 15px;
 	letter-spacing: 0.34px;
 	text-align: center;
 	margin-top: 15px;
+}
+
+   /*PROJECTS*/
+
+#mainProjects {
+	height:685px; 
+	background-color: #1e393c;
+}
+
+#mainProjects h2 {
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#blockOneProjects {
+	margin-top: 50px;
+	margin-left: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+
+}
+
+#monitoringProgram {
+	position: relative;
+}
+
+#textImage {
+	position: absolute;
+	top: 150px;
+	left: 18px;
+
+}
+
+#textImage p {
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+#textAndButton {
+	width: 240px;
+	height: 240px;
+	margin-left: 20px;
+}
+
+#textAndButton h5 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#textAndButton hr {
+	border:none;
+    width: 240px;
+	background-color:#ffffff;
+	height: 3px;
+}
+
+#textAndButton p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 20px;
+	letter-spacing: 0.34px;
+	text-align: left;
+	margin-top: 17px;
+}
+
+#buttonProjects {
+	margin-top: 17px;
+	width: 119px;
+	height: 50px;
+	background-color: #767b75;
+}
+
+#buttonProjects h5 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	letter-spacing: 0.34px;
+	text-align: center;
+	padding-top: 18px;
+}
+
+#blockTwoProjects {
+	margin-top: 20px;
+	margin-left: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+
+}
+
+#hatcheryProgram {
+	position: relative;
+}
+
+#textImageTwo {
+	position: absolute;
+	top: 193px;
+	left: 18px;
+
+}
+
+#textImageTwo p {
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+
+     /*EVENTS*/
+
+#mainEvents {
+	height: 945px;
+	background-color: #1e393c;
+}
+
+#mainEvents h2 {
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#blockEvents {
+	margin-top: 50px;
+	margin-left: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#textAndButtonEvents {
+	width: 500px;
+	height: 240px;
+	margin-left: 20px;
+}
+
+#textAndButtonEvents h5.headerForEvents {
+    font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: left;
+	margin-top: -4px;
+}
+#line {
+	width: 240px;
+	padding-top: 5px;
+}
+#line hr{
+	border:none;
+    width: 240px;
+	background-color:#ffffff;
+	height: 3px;
+	align-items: left;
+}
+
+#textForEvents h6 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	color: #ffffff;
+	letter-spacing: 0.34px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+#textForEvents p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 20px;
+	letter-spacing: 0.34px;
+	text-align: left;
+	margin-top: 13px;
+}
+
+#blockEventsTwo {
+	margin-top: 20px;
+	margin-left: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#blockEventsThree {
+		margin-top: 20px;
+	margin-left: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+ 
+      /*CONTACT PAGE*/
+
+#mainCon {
+	height: 785px;
+	background-color: #1e393c;
+}
+
+#contactOne {
+   padding-top: 50px;
+   padding-left: 50px;
+}
+
+#contactOne h3{
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+#nameArea {
+	margin-top: 52px;
+}
+ input {
+ 	border: none;
+ 	margin-top: 30px;
+ 	width: 239px;
+ 	height: 49px;
+ 	background-color: #767b75;
+ }
+
+ input::placeholder {
+ 	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	letter-spacing: 0.34px;
+	padding-top: 16px;
+	padding-left: 7px;
+	text-transform: uppercase;
+
+}
+
+.colortext {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	letter-spacing: 0.34px;
+
+}
+
+#left {
+	margin-left: 23px;
+}
+
+#emailOne {
+	width: 508px;
 }
