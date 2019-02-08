@@ -68,41 +68,82 @@
 			<form id="contactForm" action="form.php" method="post">
 
                 <div id="formOne">
-                	<h5 class="hidden">Part One of Contact</h5>
-				<input id="nameArea" type="text" required id="name" name="Name" size="32" placeholder="name" class="colortext">
+                	<h4 class="hidden">Part One of Contact</h4>
+				<input type="text" required id="name" name="Name" size="32" placeholder="name" class="colortext">
 		
 	
-				<input id="left" type="text" required id="surname" size="32" placeholder="surname" class="colortext">
+				<input type="text" required id="surname" size="32" placeholder="surname" class="colortext">
 			</div>
 
 			<div id="formTwo">
-                	<h5 class="hidden">Part Two of Contact</h5>
+                	<h4 class="hidden">Part Two of Contact</h4>
 
 				<input type="tel" required id="phone" size="32" placeholder="Phone" class="colortext">
 		
 	
-				<input id="left" type="number" required id="MembershipNum" size="32" placeholder="Membership Number" class="colortext">
+				<input type="number" required id="MembershipNum" size="32" placeholder="Membership Number" class="colortext">
 			</div>
 
 			<div id="formThree">
-                	<h5 class="hidden">Part Three of Contact</h5>
+                	<h4 class="hidden">Part Three of Contact</h4>
 
-				<input id="emailOne" type="email" required id="emailAddress" size="32" placeholder="Email" class="colortext">
+				<input type="email" required id="emailAddress" size="32" placeholder="Email" class="colortext">
 		
 
 			</div>
+			<div id="formFour">
+				<h4 class="hidden">Part four of Contact</h4>
+				<label for="participation">Participation:</label>
+				<select id="participation">
+					<option value="">Please choose an option</option>
+					<option value="fundraising">Fundraising</option>
+					<option value="volunteering">Volunteering</option>
+					<option value="membership"> Membership</option>
+					<option value="events">Events</option>
+					<option value="learningActivities"> Learning Activities</option>
+				</select>
+			</div>
+			<div id="formFive">
+                	<h4 class="hidden">Part Five of Contact</h4>
 
+				<label for="comments">Your Message:</label>
+				<textarea id="comments" name="comment" rows="5"
+				cols="33"></textarea>
+		
 
-
+			</div>
+			<div id="button">
+				<button name="button1">Send Form</button>
+			</div>
 
 			</form>
 
-
-			
 		</div>
-		</section>
-	
+		<div id="contactTwo">
+			<h3>Visit Us</h3>
 
+		<div>
+			<img src="images/map.jpg" alt="Map">
+		</div>
+		<div id="contactText">
+			<h3 class="hidden">Contact Text</h3>
+			<p>790 Southdale Road East,</p>
+			<p>London, Ontario</p>
+			<div id="lineTwo">
+			<hr>
+			</div>
+			<p class="adress">Mailing address:</p>
+			<p>Thames River Anglers</p>
+			<p>Association</p> 
+			<p>2202 Coronation Drive</p> 
+			<p>London, Ontario</p> 
+			<p>N6G 0B9</p>
+
+		</div>
+
+		</div>
+
+		</section>
 
 		<footer id="mainFooter">
 			<h2 >Local businesses step up to help out the TRAA</h2>
