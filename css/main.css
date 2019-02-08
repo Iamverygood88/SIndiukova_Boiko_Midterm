@@ -51,11 +51,27 @@ body {
 	height: 154px;
 	margin-top: 9px;
 }
+
+.animated {
+	animation-name: logoOpacity;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+}
+
+@keyframes logoOpacity {
+	0% {opacity: 0;}
+	25% {opacity: 0.25}
+	50% {opacity: 0.5;}
+	75% {opacity: 0.7}
+	100% { opacity: 1; }
+}
+
 #socialMedia {
 	margin-top: 49px;
 	margin-left: auto;
 	margin-right: 21px;
 }
+
 
 #iconNav img {
 width: 45px;
@@ -91,13 +107,50 @@ height: 45px;
 }
 
 #mainNav a {
-color: #ffffff;
-text-decoration: none;
-margin:0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  margin:0 15px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  padding: 11px 10px 13px 10px;
 
 }
+
+div #mainNav a:before,
+div #mainNav a:after
+{
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	top: 0px;
+	content: '';
+	background: #fff;
+	opacity: 0.3;
+	transition: all 0.3s;
+
+}
+
+div #mainNav a:before 
+{
+	left: 0px;
+}
+
+div #mainNav a:after {
+   right: 0px;
+}
+
+div #mainNav a:hover:before,
+div #mainNav a:hover:after
+{
+	width: 100%;
+}
+
+
+
+
 #mainInformation {
-	height:600px; 
+	padding-bottom: 50px; 
 	background-color: #1e393c;
 }
 
@@ -264,7 +317,7 @@ margin:0 15px;
 /*ABOUT US*/
 
 #mainAbout {
-	height:816px; 
+	padding-bottom: 50px;
 	background-color: #1e393c;
 }
 
@@ -277,6 +330,42 @@ margin:0 15px;
 	font-weight: bold;
     padding-top: 61px;
 	text-align: center;
+}
+
+.titles {
+	position: relative;
+	display: block;
+	transform: translateY(6rem);
+	animation: up 500ms linear forwards;
+	z-index: 1;
+	animation-duration: 1s;
+
+}
+
+.titles::before,
+.titles::after {
+   position: absolute;
+   content: "";
+   width: 0px;
+   height: 1px;
+   left: 0px;
+   z-index: -1;
+}
+
+.textEffect {
+	font-size: 0;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 0.4rem;
+}
+
+@keyframes up {
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	0% {opacity: 0;}
+	25% {opacity: 0.3;}
 }
 
 #mainAbout hr {
@@ -378,7 +467,7 @@ margin:0 15px;
  /* MEMBERSHIP*/
 
  #mainMembership {
-	height:615px; 
+	padding-bottom: 50px; 
 	background-color: #1e393c;
 }
 
@@ -486,8 +575,8 @@ margin:0 15px;
    /*PROJECTS*/
 
 #mainProjects {
-	height:685px; 
 	background-color: #1e393c;
+	padding-bottom: 50px;
 }
 
 #mainProjects h2 {
@@ -664,7 +753,7 @@ margin:0 15px;
      /*EVENTS*/
 
 #mainEvents {
-	height: 945px;
+	padding-bottom: 50px;
 	background-color: #1e393c;
 }
 
@@ -812,7 +901,7 @@ margin:0 15px;
       /*CONTACT PAGE*/
 
 #mainCon {
-	height: 785px;
+	padding-bottom: 50px;
 	background-color: #1e393c;
 	display: flex;
 	flex-direction: row;
