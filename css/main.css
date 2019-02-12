@@ -164,6 +164,15 @@ div #mainNav a:hover:after
 #MenRiver {
 	position: relative;
 }
+
+#MenRiver img {
+	transition: opacity .25s ease; 
+}
+
+#MenRiver img:hover {
+	opacity: .7;
+}
+
 #MenRiverText {
 	position: absolute;
 	width: 235.18px;
@@ -181,6 +190,14 @@ div #mainNav a:hover:after
 #carrierImage {
 	margin-left: 20px;
 
+}
+
+#Carrier img {
+	transition: opacity .25s ease;
+}
+
+#Carrier img:hover {
+	opacity: .7;
 }
 
 #Carrier {
@@ -210,6 +227,14 @@ div #mainNav a:hover:after
 #Rainbow {
 	position: relative;
 }
+
+#Rainbow img {
+	transition: opacity .25s ease;
+}
+
+#Rainbow img:hover {
+	opacity: .7;
+}
 #RainbowText {
 	position: absolute;
 	width: 235.18px;
@@ -237,6 +262,15 @@ div #mainNav a:hover:after
 #Volunteer {
 	position: relative;
 }
+
+#Volunteer img {
+	transition: opacity .25s ease;
+}
+
+#Volunteer img:hover {
+	opacity: .7;
+}
+
 #VolunteerText {
 	position: absolute;
 	font-family: "Oswald", sans-serif;
@@ -253,6 +287,15 @@ div #mainNav a:hover:after
 #happyFisherman {
 	position: relative;
 }
+
+#happyFisherman img {
+	transition: opacity .25s ease;
+}
+
+#happyFisherman img:hover {
+	opacity: .7;
+}
+
 #happyFishermanText {
 	width: 235.18px;
 	position: absolute;
@@ -407,6 +450,14 @@ div #mainNav a:hover:after
 #fishBreeding {
 	position: relative;
 }
+
+#fishBreeding img {
+	transition: opacity .25s ease;
+}
+
+#fishBreeding img:hover {
+	opacity: .7;
+}
 #fishBreedingText {
 	position: absolute;
 	width: 235.18px;
@@ -429,6 +480,14 @@ div #mainNav a:hover:after
 #Environment {
 	position: relative;
 }
+
+#Environment img {
+	transition: opacity .25s ease;
+}
+
+#Environment img:hover {
+	opacity: .7;
+}
 #EnvironmentText {
 	position: absolute;
 	font-family: "Oswald", sans-serif;
@@ -450,6 +509,13 @@ div #mainNav a:hover:after
 #Community {
 	position: relative;
 }
+#Community img {
+	transition: opacity .25s ease;
+}
+
+#Community img:hover {
+	opacity: .7;
+}
 #CommunityText {
 	position: absolute;
 	font-family: "Oswald", sans-serif;
@@ -460,10 +526,93 @@ div #mainNav a:hover:after
 	font-weight: bold;
     top: 192px;
 	left: 50px;
+}
 
+#chart1 {
+	margin-top: 50px;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.chartImage1 {
+	margin-left: 20px;
+}
+
+#chart2 {
+	margin-top: 20px;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+ h3.chart {
+	font-family: "Oswald", sans-serif;
+	font-size:36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+    margin-top: 50px;
+	text-align: center;
+}
+
+.effect {
+	position: relative;
+	display: block;
+	transform: translateY(6rem);
+	animation: up 500ms linear forwards;
+	z-index: 1;
+	animation-duration: 1s;
 
 }
 
+.effect::before,
+.effect::after {
+   position: absolute;
+   content: "";
+   width: 0px;
+   height: 1px;
+   left: 0px;
+   z-index: -1;
+}
+
+.textEffect1 {
+	font-size: 0;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 0.4rem;
+}
+
+@keyframes up {
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	0% {opacity: 0;}
+	25% {opacity: 0.3;}
+}
+#chart hr {
+	border:none;
+	margin: 40px auto;
+	width: 488px;
+	background-color:#ffffff;
+	height: 3px;
+}
+
+#eggImage img {
+	width: 370px;
+	height: 300px;
+}
+
+.chartImage1 img {
+    width: 370px;
+	height: 300px;
+}
+
+#chart2 img {
+	width: 370px;
+	height: 300px;
+}
  /* MEMBERSHIP*/
 
  #mainMembership {
@@ -559,8 +708,19 @@ div #mainNav a:hover:after
 	width: 170px;
 	height: 50px;
 	background-color: #767b75;
+	cursor: pointer;
 }
 
+#buttonMembership:hover {     
+	background: #585c58; /* Old browsers */
+    background: -moz-linear-gradient(top, #585c58 0%, #303331 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #585c58 0%,#303331 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #585c58 0%,#303331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585c58', endColorstr='#303331',GradientType=0 ); /* IE6-9 */}
+ 
+#buttonMembership a {
+	text-decoration: none;
+}
 #buttonMembership h2 {
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
@@ -571,6 +731,7 @@ div #mainNav a:hover:after
 	text-align: center;
 	margin-top: 15px;
 }
+
 
    /*PROJECTS*/
 
@@ -688,7 +849,16 @@ div #mainNav a:hover:after
 	width: 119px;
 	height: 50px;
 	background-color: #767b75;
+	cursor: pointer;
 }
+
+#buttonProjectsOne:hover {     
+	background: #585c58; /* Old browsers */
+    background: -moz-linear-gradient(top, #585c58 0%, #303331 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #585c58 0%,#303331 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #585c58 0%,#303331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585c58', endColorstr='#303331',GradientType=0 ); /* IE6-9 */}
+
 #buttonProjectsOne h5 {
 	padding-top: 17px;
     font-family: "Open Sans", sans-serif;
@@ -700,12 +870,24 @@ div #mainNav a:hover:after
 
 }
 
+#buttonProjectsOne a {
+   text-decoration: none;
+}
 #buttonProjectsTwo {
 	margin-top: 17px;
 	width: 119px;
 	height: 50px;
 	background-color: #767b75;
+	cursor: pointer;
 }
+
+#buttonProjectsTwo:hover {     
+	background: #585c58; /* Old browsers */
+    background: -moz-linear-gradient(top, #585c58 0%, #303331 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #585c58 0%,#303331 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #585c58 0%,#303331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585c58', endColorstr='#303331',GradientType=0 ); /* IE6-9 */}
+
 #buttonProjectsTwo h5 {
 	padding-top: 17px;
     font-family: "Open Sans", sans-serif;
@@ -715,6 +897,10 @@ div #mainNav a:hover:after
 	text-align: center;
 	text-transform: uppercase;
 
+}
+
+#buttonProjectsTwo a {
+   text-decoration: none;
 }
 
 
@@ -787,7 +973,16 @@ div #mainNav a:hover:after
 	width: 119px;
 	height: 50px;
 	background-color: #767b75;
+	cursor: pointer;
 }
+
+#buttonEventOne:hover {     
+	background: #585c58; /* Old browsers */
+    background: -moz-linear-gradient(top, #585c58 0%, #303331 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #585c58 0%,#303331 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #585c58 0%,#303331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585c58', endColorstr='#303331',GradientType=0 ); /* IE6-9 */}
+
 #buttonEventOne h5 {
 	padding-top: 17px;
     font-family: "Open Sans", sans-serif;
@@ -799,12 +994,26 @@ div #mainNav a:hover:after
 
 }
 
+#buttonEventOne a {
+	text-decoration: none;
+}
+
+
 #buttonEventTwo {
 	margin-top: 17px;
 	width: 119px;
 	height: 50px;
 	background-color: #767b75;
+	cursor: pointer;
 }
+
+#buttonEventTwo:hover {     
+	background: #585c58; /* Old browsers */
+    background: -moz-linear-gradient(top, #585c58 0%, #303331 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #585c58 0%,#303331 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #585c58 0%,#303331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585c58', endColorstr='#303331',GradientType=0 ); /* IE6-9 */}
+
 #buttonEventTwo h5 {
 	padding-top: 17px;
     font-family: "Open Sans", sans-serif;
@@ -816,12 +1025,25 @@ div #mainNav a:hover:after
 
 }
 
+#buttonEventTwo a {
+	text-decoration: none;
+}
+
 #buttonEventThree {
 	margin-top: 17px;
 	width: 119px;
 	height: 50px;
 	background-color: #767b75;
+	cursor: pointer;
 }
+
+#buttonEventThree:hover {     
+	background: #585c58; /* Old browsers */
+    background: -moz-linear-gradient(top, #585c58 0%, #303331 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #585c58 0%,#303331 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #585c58 0%,#303331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585c58', endColorstr='#303331',GradientType=0 ); /* IE6-9 */}
+
 #buttonEventThree h5 {
 	padding-top: 17px;
     font-family: "Open Sans", sans-serif;
@@ -831,6 +1053,9 @@ div #mainNav a:hover:after
 	text-align: center;
 	text-transform: uppercase;
 
+}
+#buttonEventThree a{
+	text-decoration: none;
 }
 
 .headerEvents h5.headerForEvents {
@@ -1040,7 +1265,15 @@ border: none;
 	color: #ffffff;
 	letter-spacing: 0.34px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
+
+button:hover {     
+	background: #585c58; /* Old browsers */
+    background: -moz-linear-gradient(top, #585c58 0%, #303331 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #585c58 0%,#303331 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #585c58 0%,#303331 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585c58', endColorstr='#303331',GradientType=0 ); /* IE6-9 */}
 
 #contactTwo {
    padding-top: 50px;
